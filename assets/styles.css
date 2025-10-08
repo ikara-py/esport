@@ -1,0 +1,200 @@
+body {
+    background-color: #0a0a16;
+    color: white;
+    overflow-x: hidden;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #00f3ff, #b967ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #00f3ff, #b967ff);
+    border-radius: 10px;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 243, 255, 0.2);
+}
+
+.game-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.game-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(10, 10, 22, 0.9) 100%);
+    z-index: 1;
+}
+
+.game-card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.team-member {
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.stats-number {
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, #00f3ff, #b967ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00f3ff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #00f3ff, #b967ff);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 243, 255, 0.4);
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(10, 10, 22, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.show {
+    transform: translateX(0);
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.mobile-menu a:hover {
+    color: #00f3ff;
+    background: rgba(0, 243, 255, 0.1);
+}
+
+.mobile-menu-button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.mobile-menu-button.active i {
+    transform: rotate(90deg);
+}
+
+.mobile-menu-button i {
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.mobile-menu-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #00f3ff;
+    transform: scale(1.1);
+}
+
+/* Animation for fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
