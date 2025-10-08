@@ -58,4 +58,4 @@ This project aims to reinvent the online experience of Nexus Esports by transfor
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/nexus-esports.git
+   git clone https://github.com/ikara-py/esport.git
