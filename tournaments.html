@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tournaments">
     <title>Nexus Esports - The Ultimate Gaming Experience</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -57,18 +58,21 @@
                 <a href="teams.html" class="nav-link">Teams</a>
                 <a href="tournaments.html" class="nav-link">Tournaments</a>
                 <a href="contact.html" class="nav-link">Contact</a>
+                <a href="events.html" class="nav-link">events</a>
             </div>
             <div class="flex items-center space-x-4">
                 <a href="login.html" class="px-6 py-3 rounded-lg bg-card-bg hover:bg-neon-blue hover:text-dark-bg transition-all duration-300">Login</a>
                 <a href="signup.html" class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold inline-block text-center">Sign Up</a>
-                <button class="md:hidden text-xl mobile-menu-button">
+                <button class="md:hidden text-xl mobile-menu-button" title="menu">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
     <div class="mobile-menu hidden">
-        <button class="mobile-menu-close">
+        <button class="mobile-menu-close" title="menu">
             <i class="fas fa-times"></i>
         </button>
         <a href="index.html">Home</a>
@@ -77,12 +81,14 @@
         <a href="teams.html">Teams</a>
         <a href="tournaments.html">Tournaments</a>
         <a href="contact.html">Contact</a>
+        <a href="events.html">events</a>
         <div class="mt-8 flex flex-col space-y-4">
             <a href="login.html" class="px-6 py-3 rounded-lg bg-card-bg hover:bg-neon-blue hover:text-dark-bg transition-all duration-300">Login</a>
             <a href="signup.html" class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold inline-block text-center">Sign Up</a>
         </div>
     </div>
-        <section id="tournaments" class="py-16 bg-card-bg/30">
+
+        <section id="tournaments" class="pt-24 bg-card-bg/30">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-4 section-title">UPCOMING TOURNAMENTS</h2>
             <p class="text-center text-gray-400 max-w-2xl mx-auto mb-12">Don't miss out on the biggest esports events with massive prize pools.</p>
@@ -111,7 +117,7 @@
                                 <p class="text-gray-400">Starts in</p>
                                 <p class="text-xl font-bold">2 days, 4 hours</p>
                             </div>
-                            <button class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold">Register Now</button>
+                            <a href="login.html"><button class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold">Register Now</button></a>
                         </div>
                     </div>
                 </div>
@@ -139,10 +145,128 @@
                                 <p class="text-gray-400">Starts in</p>
                                 <p class="text-xl font-bold">5 days, 12 hours</p>
                             </div>
-                            <button class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold">Register Now</button>
+                            <a href="login.html"><button class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold">Register Now</button></a>
                         </div>
                     </div>
                 </div>
+
+
+                <div class="bg-dark-bg rounded-xl overflow-hidden card-hover border border-gray-800">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Cosmic Clash Royale Circuit</h3>
+                                <p class="text-gray-400">Clash Royale • $750,000 Prize Pool</p>
+                            </div>
+                            <span class="px-3 py-1 bg-neon-purple text-dark-bg rounded-full text-sm font-bold">LIVE</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-purple-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-red-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-pink-500 border-2 border-dark-bg"></div>
+                            </div>
+                            <span class="ml-2 text-gray-400">60 teams registered</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-400">Starts in</p>
+                                <p class="text-xl font-bold">7 days, 08 hours</p>
+                            </div>
+                            <a href="login.html"><button class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold">Register Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="bg-dark-bg rounded-xl overflow-hidden card-hover border border-gray-800">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Mythic Overwatch League Showdown</h3>
+                                <p class="text-gray-400">Overwatch 2 • $1,500,000 Prize Pool</p>
+                            </div>
+                            <span class="px-3 py-1 bg-neon-blue text-dark-bg rounded-full text-sm font-bold">UPCOMING</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-neon-purple border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-pink-500 border-2 border-dark-bg"></div>
+                            </div>
+                            <span class="ml-2 text-gray-400">32 teams registered</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-400">Starts in</p>
+                                <p class="text-xl font-bold">12 days, 04 hours</p>
+                            </div>
+                            <a href="login.html"><button class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold">Register Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="bg-dark-bg rounded-xl overflow-hidden card-hover border border-gray-800">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Pinnacle Apex Legends Grand Prix</h3>
+                                <p class="text-gray-400">Apex Legends • $1,000,000 Prize Pool</p>
+                            </div>
+                            <span class="px-3 py-1 bg-neon-blue text-dark-bg rounded-full text-sm font-bold">UPCOMING</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-green-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-purple-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-yellow-500 border-2 border-dark-bg"></div>
+                                
+                            </div>
+                            <span class="ml-2 text-gray-400">48 teams registered</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-400">Starts in</p>
+                                <p class="text-xl font-bold">9 days, 23 hours</p>
+                            </div>
+                            <a href="login.html"><button class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold">Register Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-dark-bg rounded-xl overflow-hidden card-hover border border-gray-800">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Championship Chess.com Blitz Battle</h3>
+                                <p class="text-gray-400">Chess • $250,000 Prize Pool</p>
+                            </div>
+                            <span class="px-3 py-1 bg-neon-blue text-dark-bg rounded-full text-sm font-bold">UPCOMING</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-purple-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-yellow-500 border-2 border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-neon-purple border-2 border-dark-bg"></div>
+                            </div>
+                            <span class="ml-2 text-gray-400">128 players registered</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-400">Starts in</p>
+                                <p class="text-xl font-bold">4 days, 18 hours</p>
+                            </div>
+                            <a href="login.html"><button class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold">Register Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
