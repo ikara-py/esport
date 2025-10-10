@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="home">
+    <title>Nexus Esports - The Ultimate Gaming Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-blue': '#00f3ff',
+                        'neon-purple': '#b967ff',
+                        'dark-bg': '#0a0a16',
+                        'card-bg': '#13132b',
+                    },
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        glow: {
+                            'from': { boxShadow: '0 0 5px #00f3ff, 0 0 10px #00f3ff, 0 0 15px #00f3ff' },
+                            'to': { boxShadow: '0 0 10px #00f3ff, 0 0 20px #00f3ff, 0 0 30px #00f3ff' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body class="font-inter">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-dark-bg/80 backdrop-blur-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-orbitron font-bold gradient-text">NEXUS ESPORTS</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="games.html" class="nav-link">Games</a>
+                <a href="teams.html" class="nav-link">Teams</a>
+                <a href="tournaments.html" class="nav-link">Tournaments</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="events.html" class="nav-link">events</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="login.html" class="px-6 py-3 rounded-lg bg-card-bg hover:bg-neon-blue hover:text-dark-bg transition-all duration-300">Login</a>
+                <a href="signup.html" class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold inline-block text-center">Sign Up</a>
+                <button class="md:hidden text-xl mobile-menu-button" title="menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden">
+        <button class="mobile-menu-close" title="menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="games.html">Games</a>
+        <a href="teams.html">Teams</a>
+        <a href="tournaments.html">Tournaments</a>
+        <a href="contact.html">Contact</a>
+        <a href="events.html">events</a>
+        <div class="mt-8 flex flex-col space-y-4">
+            <a href="login.html" class="px-6 py-3 rounded-lg bg-card-bg hover:bg-neon-blue hover:text-dark-bg transition-all duration-300">Login</a>
+            <a href="signup.html" class="px-4 py-2 rounded-lg btn-primary text-dark-bg font-bold inline-block text-center">Sign Up</a>
+        </div>
+    </div>
+
+
+        <section id="games" class="pt-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-4 section-title">POPULAR GAMES</h2>
+            <p class="text-center text-gray-400 max-w-2xl mx-auto mb-12">Compete in your favorite games across multiple genres and platforms.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="game-card h-96 rounded-xl overflow-hidden relative">
+                    <img src="images/cs2.webp" alt="cs" class="w-full h-full object-cover">
+                    <div class="game-card-content absolute bottom-0 left-0 p-6 w-full">
+                        <h3 class="text-2xl font-bold mb-2">Thunderpick World Championship 2025</h3>
+                        <p class="text-gray-300 mb-4">Counter-Strike 2</p>
+                        <p class="text-gray-300 mb-4 text-sm">A significant tournament for the CS2 scene.</p>
+                        <a href="login.html"><button class="px-4 py-2 rounded-lg bg-neon-blue text-dark-bg font-bold">Join the event</button></a>
+                    </div>
+                </div>
+                
+                <div class="game-card h-96 rounded-xl overflow-hidden relative">
+                    <img src="images/Apex Legends.webp" alt="ALGS: 2026 Championship" class="w-full h-full object-cover">
+                    <div class="game-card-content absolute bottom-0 left-0 p-6 w-full">
+                        <h3 class="text-2xl font-bold mb-2">ALGS: 2026 Championship</h3>
+                        <p class="text-gray-300 mb-4">Apex Legends</p>
+                        <p class="text-gray-300 mb-4 text-sm">The championship event for the Apex Legends Global Series.</p>
+                        <a href="login.html"><button class="px-4 py-2 rounded-lg bg-neon-blue text-dark-bg font-bold">Join the event</button></a>
+                    </div>
+                </div>
+                
+                <div class="game-card h-96 rounded-xl overflow-hidden relative">
+                    <img src="images/pubg.webp" alt="PUBG Global Championship 2025" class="w-full h-full object-cover">
+                    <div class="game-card-content absolute bottom-0 left-0 p-6 w-full">
+                        <h3 class="text-2xl font-bold mb-2">PUBG Global Championship 2025</h3>
+                        <p class="text-gray-300 mb-4">PUBG: Battlegrounds</p>
+                        <p class="text-gray-300 mb-4 text-sm">The final and biggest tournament of the year for competitive PUBG.</p>
+                        <a href="login.html"><button class="px-4 py-2 rounded-lg bg-neon-blue text-dark-bg font-bold">Join the event</button></a>
+                    </div>
+                </div>
+                
+                <div class="game-card h-96 rounded-xl overflow-hidden relative">
+                    <img src="images/Fatal Fury.webp" alt="SNK World Championship 2025 Finals" class="w-full h-full object-cover">
+                    <div class="game-card-content absolute bottom-0 left-0 p-6 w-full">
+                        <h3 class="text-2xl font-bold mb-2">SNK World Championship 2025 Finals</h3>
+                        <p class="text-gray-300 mb-4">Fatal Fury</p>
+                        <p class="text-gray-300 mb-4 text-sm">A major championship for the fighting game Fatal Fury.</p>
+                        <a href="login.html"><button class="px-4 py-2 rounded-lg bg-neon-blue text-dark-bg font-bold">Join the event</button></a>
+                    </div>
+                </div>
+
+
+                
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-20">
+            <div class="absolute top-1/3 left-1/4 w-96 h-96 rounded-full bg-neon-purple blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-neon-blue blur-3xl animate-pulse-slow"></div>
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-orbitron font-bold mb-6">READY TO COMPETE?</h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">Join thousands of players and teams competing in the world's fastest growing esports platform.</p>
+            <a href="signup.html" class="px-8 py-3 rounded-lg btn-primary text-dark-bg font-bold text-lg animate-glow">Create Your Account Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-card-bg border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-orbitron font-bold gradient-text">NEXUS ESPORTS</h2>
+                    <p class="text-gray-400 mt-2">The future of competitive gaming</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://x.com" class="text-gray-400 hover:text-white transition-colors duration-300" title="X (twitter)">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="https://discord.com" class="text-gray-400 hover:text-white transition-colors duration-300" title="Discord">
+                        <i class="fab fa-discord text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="text-gray-400 hover:text-white transition-colors duration-300" title="Instagram">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://www.twitch.tv" class="text-gray-400 hover:text-white transition-colors duration-300" title="Twitch">
+                        <i class="fab fa-twitch text-xl"></i>
+                    </a>
+                    <a href="https://youtube.com" class="text-gray-400 hover:text-white transition-colors duration-300" title="Youtube">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Nexus Esports. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+    </body>
+
+</html>
